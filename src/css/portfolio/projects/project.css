@@ -1,0 +1,28 @@
+.body-project{
+    display: flex;
+    height: 200px;
+    align-items: center;
+    
+}
+
+
+.container-project{
+
+    display: flex;
+    align-items: center;
+    background-color: #fffcf5;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+.header-project{
+    display: flex;
+    justify-content:flex-start;
+    margin-left: 10px;
+    margin-top: -50px;
+    width: 100%;
+    color: blue;
+}

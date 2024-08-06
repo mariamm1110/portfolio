@@ -1,0 +1,63 @@
+.container-article  {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Añade un poco de espacio entre las tarjetas */
+    
+  }
+  
+  .card-article {
+    position: relative;
+    left: 0px;
+    background-color: #fff;
+    width: 200px; 
+    height: auto; 
+    background-color: rgb(115, 245, 137);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-left: -50px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    transition: transform 0.3s, left 0.3s;
+    padding: 20px;
+    text-align: center; 
+  }
+
+  .card-article:not(:first-child) {
+    margin-left: -50px;
+  }
+
+  .card-article:hover{
+    transform: translateY(-20px);
+  }
+
+  .card-article:hover ~ .card-article{
+    left: 50px;
+  }
+  
+  .card-article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px; 
+  }
+  
+  .card-article  h2 {
+    margin: 10px 0; 
+    font-family: serif;
+  }
+  
+  .card-article  p {
+    margin: 10px 0; 
+  }
+  
+  .card-article :first-child {
+    margin-left: 0;
+  } 
+  
+ 
+  
+ 
+  

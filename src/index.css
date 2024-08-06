@@ -1,0 +1,155 @@
+li {
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
+}
+
+.dios{
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.dios::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: lightblue;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.dios:hover::after {
+  width: 100%;
+  left: 0;
+  background-color: lightblue;
+}
+
+
+
+/* .container{
+  display: flex;;
+} */
+
+
+/* .card{
+  position: relative;
+  width: 150px;
+  height: 200px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin-left: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  transition: transform 0.3s, left 0.3s;
+} */
+
+/* .card:first-child{
+  margin-left: 0;
+}
+
+.card:hover{
+  transform: translateY(-20px);
+}
+
+.card:hover ~ .card{
+  left: 50px;
+
+
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 20px;
+} */
+
+.head {
+  background-color: #ffcccc;
+  padding: 20px;
+  text-align: center;
+}
+
+/* .title {
+  font-size: 2em;
+  margin-bottom: 10px;
+} */
+
+/* .sub-title {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+} */
+
+.menu {
+  background-color: #ffe6cc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  margin: 0 15px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .article {
+  background-color: #ffe6e6;
+  flex: 3;
+  padding: 20px;
+  margin-right: 20px;
+} */
+
+/* .article .image {
+  display: block;
+  margin-bottom: 20px;
+} */
+
+/* .paragraph {
+  margin-bottom: 20px;
+} */
+
+/* .sidebar {
+  background-color: #ccffe6;
+  flex: 1;
+  padding: 20px;
+} */
+
+/* .sidebar .list {
+  list-style: none;
+}
+
+.sidebar .list li {
+  margin-bottom: 10px;
+} */
+
+.footer {
+  background-color: #cce6ff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}

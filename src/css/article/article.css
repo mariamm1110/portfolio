@@ -1,0 +1,48 @@
+/* .article{
+    
+    
+    
+    
+    background-color: #e0e0f8;
+    font-family: Arial, sans-serif ;
+  
+  } */
+
+  
+/* .article {
+  background-color: #ffe6e6;
+  flex: 3;
+  padding: 20px;
+  margin-right: 20px;
+} */
+.article-article-a {
+    /* display: flex; */
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    height: 100hv;
+    background-color: #ae63e7;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 20px;
+    border-radius: 20px;
+  }
+  
+  .article-title-article-a  {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .container-article-a  {
+    display: flex;
+    justify-content: center; /* Centrar las tarjetas */
+    gap: 20px; /* Añade un poco de espacio entre las tarjetas */
+    width: auto;
+  }
+  
+ 
+  
+
+  
+  

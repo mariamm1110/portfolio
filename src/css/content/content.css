@@ -1,0 +1,33 @@
+
+.content {
+    background-color: red;
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+  }
+  
+  .breadcrumb, .content-info, .content-main {
+    background-color: green;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .breadcrumb-selected {
+    background-color: white;
+    padding: 10px;
+  }
+
+  .content-main {
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-start; */
+    flex-wrap: wrap; /* Permite que los elementos se alineen en varias filas si no caben en una sola */
+  }
+
+  
+
+  /* .sidebar {
+    background-color: #ccffe6;
+    flex: 1;
+    padding: 20px;
+  } */

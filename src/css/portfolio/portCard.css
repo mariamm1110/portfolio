@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+.card-portfolio-card{
+    width: 280px;
+    aspect-ratio: 1 / 1.3;
+    padding: 24px;
+    background: linear-gradient(135deg, #ebb2c3, #cbd8e8);
+    border-radius: 24px;
+    box-shadow: 0px 0px 20px -1.5px hsl(0, 0%, 0% / 0.5);
+    position: relative;
+    z-index: 2.5;
+    border: #f74c63 5px solid;
+}
+
+.card-portfolio-card::before{
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background-color: hsl(210, 14%, 80%);
+    z-index: -1;
+    border-radius: inherit;
+    transition: all 0.35s ease;
+}
+
+.card-portfolio-card:hover::before{
+    transform: rotate(10deg);
+    box-shadow: 0px 0px 20px -5px #000;
+}
+
+.card-image-portfolio-card > img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.card-portfolio-card:hover > .card-image-portfolio-card{
+    translate: 0 -14px;
+}
+
+.icon-portfolio-card{
+    width: 32px;
+    height: 32px;
+    rotate: -45deg;
+    transition: 0.35s ease;
+    z-index: 1;
+}
+
+.card-portfolio-card:hover .icon-portfolio-card{
+    rotate: 0deg;
+    color: #7988d2
+}
+
+
+.lowerpart-portfolio-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.card-content-portfolio-card p{
+    color: white;
+}

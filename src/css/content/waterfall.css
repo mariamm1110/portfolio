@@ -1,0 +1,164 @@
+:root {
+    --gap: 15px;
+    --white: #fbfbfb;
+    --background: #45494e;
+    --color1: #fda085;
+    --color1g: #f6d365;
+    --color2: #bff098;
+    --color2g: #6fd6ff;
+    --color3: #ea8d8d;
+    --color3g: #a890fe;
+    --color4: #d8b5ff;
+    --color4g: #1eae98;
+    --color5: #c6ea8d;
+    --color5g: #fe90af;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: var(--background);
+    font-family: "Varela Round", Nunito, Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+  }
+  
+  .menu {
+    margin: var(--gap);
+  }
+  
+  .menu > ol {
+    list-style: none;
+    margin: calc(var(--gap) * 2) 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu-item {
+    background: #2c2e31;
+    border-top: 5px solid var(--color1);
+    margin: 0 var(--gap);
+    position: relative;
+    transition: .5s;
+    display: inline-block;
+  }
+  
+  .menu-item a {
+    color: var(--white);
+    display: block;
+    padding: var(--gap);
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+  }
+  
+  .menu-item a:after {
+    content: "";
+    background: var(--white);
+    position: absolute;
+    bottom: 5px;
+    left: var(--gap);
+    height: 3px;
+    width: 0;
+    transition: .5s;
+    transition-delay: .2s;
+  }
+  
+  .menu-item:focus-within,
+  .menu-item:hover {
+    z-index: 100;
+  }
+  
+  .menu-item:focus-within .sub-menu,
+  .menu-item:hover .sub-menu {
+    max-height: 200px;
+  }
+  
+  .menu-item:focus-within a:after,
+  .menu-item:hover a:after {
+    width: 50px;
+  }
+  
+  .menu-item .sub-menu {
+    /* border-left: 5px solid var(--color1); */
+    background: linear-gradient(to bottom, var(--color1), var(--color1g));
+    list-style: none;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: .5s;
+  }
+  
+  .menu-item:nth-child(2) {
+    border-top: 5px solid var(--color2);
+  }
+  
+  .menu-item:nth-child(2) .sub-menu {
+    /* border-left: 5px solid var(--color2); */
+    background: linear-gradient(to bottom, var(--color2), var(--color2g));
+  }
+  
+  .menu-item:nth-child(3) {
+    border-top: 5px solid var(--color3);
+  }
+  
+  .menu-item:nth-child(3) .sub-menu {
+    border-left: 5px solid var(--color3);
+    background: linear-gradient(to bottom, var(--color3), var(--color3g));
+  }
+  
+  .menu-item:nth-child(4) {
+    border-top: 5px solid var(--color4);
+  }
+  
+  .menu-item:nth-child(4) .sub-menu {
+    border-left: 5px solid var(--color4);
+    background: linear-gradient(to bottom, var(--color4), var(--color4g));
+  }
+  
+  .menu-item:nth-child(5) {
+    border-top: 5px solid var(--color5);
+  }
+  
+  .menu-item:nth-child(5) .sub-menu {
+    border-left: 5px solid var(--color5);
+    background: linear-gradient(to bottom, var(--color5), var(--color5g));
+  }
+  
+  .sub-menu .menu-item {
+    font-size: .9em;
+    padding: var(--gap);
+  }
+  
+  .sub-menu .menu-item a {
+    color: var(--white);
+  }
+  
+  .sub-menu .menu-item:hover {
+    background: rgba(44, 46, 49, 0.3);
+  }
+  
+  @media (min-width: 600px) {
+    .menu > ol {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .menu-item {
+      display: inline-block;
+      margin: 0 var(--gap);
+      width: auto;
+    }
+  
+    .sub-menu {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+    }
+  }
+  

@@ -1,28 +1,270 @@
-.body-project{
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+.body-project {
     display: flex;
-    height: 200px;
+    height: 350px;
     align-items: center;
-    
 }
 
-
-.container-project{
-
+.container-project {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     background-color: #fffcf5;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 90%;
+    width: 80%;
+    height: 80%;
     margin: auto;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
 }
 
-.header-project{
-    display: flex;
-    justify-content:flex-start;
-    margin-left: 10px;
-    margin-top: -50px;
+.header-project {
     width: 100%;
     color: blue;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2rem;
+}
+
+.info-container-project {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.info-container-project-p{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin-top: 20px;
+}
+
+.info-container-project p {
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    font-weight: 500;
+    font-size: large;
+    line-height: 40px;
+    margin-left: 50px;
+    text-align: justify;
+    font-family: "Urbanist", sans-serif;
+}
+
+.number-bar-project {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    color: black;
+}
+
+label {
+    padding-right: 10px;
+    font-size: 1rem;
+    color: black;
+}
+
+/* .grapich-container-project{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    background: #cfd1e1;
+} */
+
+.box-project {
+    position: relative;
+    width: 200px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -65px;
+    /* background-color: #99e3e4; */
+    background: linear-gradient(45deg, #99e3e4 70%, #fff);
+    border-radius: 5cqw;
+}
+
+.box-project::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    background: linear-gradient(#fff, #fff, #e3e3e3);
+    filter: blur(1px);
+    z-index: 1;
+}
+
+.body-project::after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    right: -1px;
+    width: 20px;
+    height: 100%;
+    background: #99e3e4;
+    filter: blur(1px);
+    z-index: 1;
+}
+
+.box-project .shadow-project {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #eee;
+}
+
+.box-project .shadow-project::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(100% + 5px);
+    width: 100%;
+    height: 200%;
+    background: linear-gradient(rgba(0,0,0,0.075), transparent);
+    transform: skewX(45deg);
+}
+
+.box-project .shadow-project::after {
+    content: '';
+    position: absolute;
+    bottom: -200%;
+    left: calc(100% + 15px);
+    width: 100%;
+    height: 200%;
+    background: linear-gradient(rgba(0,0,0,0.075), transparent);
+    transform: skewX(45deg);
+}
+
+.box-project .content-project {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-120deg, #99e3e4 , #fff );
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1),
+        15px 15px 15px rgba(0,0,0,0.1),
+        20px 20px 20px rgba(0,0,0,0.1),
+        50px 50px 50px rgba(0,0,0,0.1),
+        inset 3px 3px 2px #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-project .content-project .percent-project {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.box-project .content-project .percent-project::before {
+    content: attr(data-text);
+    position: absolute;
+    inset: 20px;
+    background: #ed6192;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.75rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.box-project .content-project .percent-project svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(-90deg);
+}
+
+.box-project .content-project .percent-project svg circle {
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 3;
+    stroke: rgba(0,0,0,0.05);
+    transform: translate(5px, 5px);
+}
+
+.box-project .content-project .percent-project svg circle:nth-child(2) {
+    stroke: #16a5a3;
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+    opacity: 0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 2.5s;
+}
+
+.box-project .content-project .percent-project svg circle:nth-child(2).animate{
+    animation: fadeIn 1s linear forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.box-project .content-project .percent-project .dot-project {
+    position: absolute;
+    inset: 5px;
+    z-index: 10;
+    animation: animateDot 2s linear forwards;
+}
+
+@keyframes animateDot {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(calc(3.6deg * var(--num)));
+    }
+}
+
+.box-project .content-project .percent-project .dot-project::before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    background: #16a5a3;
+    border-radius: 50%;
+}
+
+.box-project .content-project .number-project {
+    position: relative;
+    inset: 0;
+    opacity: 0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 2.5s;
+}
+
+.box-project .content-project .number-project h2 {
+    font-size: 2.5rem;
+    color: #ed6192;
+    
+    font-weight: 400;
+}
+
+.box-project .content-project .number-project h2 span {
+    font-weight: 300;
+    font-size: 1.5rem;
 }

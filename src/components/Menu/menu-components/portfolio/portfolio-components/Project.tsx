@@ -1,5 +1,6 @@
 import '../../../../../css/portfolio/projects/project.css'
 import styled from 'styled-components';
+import React, {useEffect, useRef} from 'react';
 
 interface ProjectProps {
     title:string;
@@ -11,6 +12,7 @@ interface ProjectProps {
     number1:number;
     number2?:number;
     background:string;
+    color:string;
 }
 
 const BodyProject = styled.div<{ background: string }>`
@@ -21,7 +23,53 @@ const BodyProject = styled.div<{ background: string }>`
   background: ${({ background }) => background};
 `;
 
-export const Project:React.FC<ProjectProps> = ({title, paragraph,subtitle1,number1,background}) => {
+const HeaderProject = styled.div<{ color: string }>`
+  width: 100%;
+  background: ${({ color }) => color};
+   -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 2rem;
+  shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+`;
+
+interface CustomStyle extends React.CSSProperties {
+  '--num'?: number;
+}
+
+
+export const Project:React.FC<ProjectProps> = ({title, paragraph,subtitle1,number1,background, color}) => {
+
+  const projectRef=useRef<HTMLDivElement>(null);
+  const style: CustomStyle = { '--num': number1 };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    if (projectRef.current) {
+      observer.observe(projectRef.current);
+    }
+
+    return () => {
+      if (projectRef.current) {
+        observer.unobserve(projectRef.current);
+      }
+    };
+  }, []);
+
   return (
     <>
     <BodyProject background={background}>
@@ -31,21 +79,44 @@ export const Project:React.FC<ProjectProps> = ({title, paragraph,subtitle1,numbe
 
         <div className="container-project">
             <div className="header-project">
-                <h3>{title}</h3>
+            <HeaderProject color={color}>
+              <h3>{title}</h3>
+            </HeaderProject>
+                
+                
             </div>
             <div className="info-container-project">
-                <p>{paragraph}</p>
-                <div className="grapich-container-projec">
-                    <div className="bar-container-project">
-                        <h3 className="number-bar-project">{number1}</h3>
-                        <div className="bar-project">
-                            <h2 className="bar-subtitle-project">{subtitle1}</h2>
-                            <div className="bar-bar-project">
-        
-                            </div>
-                        </div>
+              <div className="info-container-project-p">
+              <p>{paragraph}</p>
+              </div>
+                
+              <div className="grapich-container-project">
+
+                <div className="box-project">
+                    <div className="shadow-project"></div>
+                    <div className="content-project">
+                      <div className="percent-project" data-text={subtitle1} style={style}>
+                        <div className="dot-project"></div>
+                        <svg>
+                          <circle cx="70" cy="70" r="70"></circle>
+                          <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                      </div>
+                      <div className="number-project">
+                        <h2>{number1}<span>%</span></h2>
+                      </div>
                     </div>
                 </div>
+
+
+               
+
+
+
+
+
+            
+              </div>
             </div>
         </div>
 

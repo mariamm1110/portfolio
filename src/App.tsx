@@ -3,6 +3,7 @@ import './App.css'
 
 import { RouterR } from './components/Menu/RouterR'
 import { Header } from './components/Header';
+import { Footer } from './components/Footer';
 
 
 function App() {
@@ -24,13 +25,16 @@ function App() {
           
             
               <RouterR/>
+              <Footer/>
 
-            <footer className="footer">
+
+            {/* <footer className="footer">
               <p>Footer content here</p>
-            </footer>
+            </footer> */}
 
 
     </header>
+              
         
       
 

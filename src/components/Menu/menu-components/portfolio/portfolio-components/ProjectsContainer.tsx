@@ -17,21 +17,23 @@ export const ProjectsContainer = () => {
                 title="so active web page"
                 paragraph="Allows users to buy and interact with products, selecting them in detail by category, color or size. 
                 This well-structured e-shop lets both client and owner save time and make their tasks easily, without depending on a direct contact."
-                subtitle1="CSS"
+                subtitle1="JS"
                 number1={45}
                 background="linear-gradient(to bottom, #97b5fd, #acdeab)"
                 color="linear-gradient(to bottom, #ff5969, #ff8840)"/>
             <Project
-                title="titulo3"
-                paragraph="paragraph3"
-                subtitle1="JS"
+                title="Furniture Card"
+                paragraph="Designed and implemented a vissually appealing and responsive product card for a forniture e-commerce website usign HTML, CSS and JS.
+                This cards will serve as a reusable component that can be integrated into various sections of the website."
+                subtitle1="CSS"
                 number1={87}
                 background="linear-gradient(to bottom, #acdeab, #f8f6b9)"
                 color="linear-gradient(to bottom, #ff8840 , #ffbb63)"/>
             <Project
-                title="titulo4"
-                paragraph="paragraph3"
-                subtitle1="HTML"
+                title="Webfolio"
+                paragraph="Designed and built a personal webfolio wich will serve as an online portfolio showing skills, projects, experience and contact information.
+                It is a professional, visually appealing, and fully responsive website that reflects personal brand"
+                subtitle1="JSX"
                 number1={39}
                 background="linear-gradient(to bottom, #f8f6b9, #fab0d3)"
                 color="linear-gradient(to bottom, #ffdb99, #db2265)"/>

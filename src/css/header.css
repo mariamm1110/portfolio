@@ -1,65 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Modak&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&family=Sora:wght@100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 .header-header{
-    background-color: #ffe6cc;
-    display: flex;
-    padding: 10px;
-    margin-bottom: 20px;
+    background-color: #858fb4;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+    font-family: "Calistoga", sans-serif;
+    
     
 }
 
-.header-logo-header{
+.header-header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* .header-logo-header{
     background-color: cyan;
     padding: 10px;
     flex: 0 0 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+} */
+.header-title{
+    color: black;
+    text-shadow: 1px 1px 2px #fff,
+                1px 1px 2px #ef8e73;
+    
 }
+
+
+ @keyframes glow {
+    from {
+      text-shadow: 0 0 10px -10px #7e3285;
+    }
+    to {
+      text-shadow: 0 0 10px 10px #7e3285;
+    }
+  }
 
 .header-logo-header img{
-    max-width: 100%;
-    height: auto;
+    height: 40px;
+   
+    
 }
 
-.header-main-header{
-    background-color: magenta;
-    flex: 1;
-    padding:10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header-social-media a {
+    margin: 0 10px;
+    color: black;
+    text-shadow: 1px 1px 2px #fff,
+    1px 1px 2px #ef8e73;
+    width: 100px;
+    height: 100px;
+}
+.header-social-media{
+    margin: 0 10px;
+    color: black;
+    text-shadow: 1px 1px 2px #fff,
+    1px 1px 2px #ef8e73;
+   
 }
 
-.header-main-body-header{
-    background-color: white;
-    padding: 10px;
-    width: 100%;
-    text-align: center;
-    font-family: "Sora", sans-serif;
-}
-
-.header-header ul{
-    list-style: none;
-  display: flex;
-  justify-content: center;
-}
-
-.header-header li{
-    margin: 0 15px;
-}
-
-.toolbar-header {
-    background-color: gray;
-    border-radius: 10px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-  }
-  
-.toolbar-body-header {
-    background-color: white;
-    padding: 10px;
-    text-align: center;
+.header-social-media FontAwesomeIcon{
+    color: #fff;
+    font-size: 20px;
 }

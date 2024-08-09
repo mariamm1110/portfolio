@@ -1,10 +1,11 @@
-import { BrowserRouter as Router, Route, Routes, BrowserRouter } from "react-router-dom"
+import { Route, Routes, BrowserRouter } from "react-router-dom"
 import { Menu } from "./Menu"
-import { Card4 } from "../Card4"
+
 import { Home } from "./menu-components/Home"
 import { About } from "./menu-components/About"
 import { Portfolio } from "./menu-components/portfolio/Portfolio"
 import { Skills } from "./menu-components/skills/Skills"
+import { Contact } from "../Contact"
 
 
 export const RouterR = () => {
@@ -17,7 +18,7 @@ export const RouterR = () => {
                 
                 <Route path="/card2" element={<Portfolio/>}></Route>
                 <Route path="/card3" element={<Skills/>}></Route>
-                <Route path="/card4" element={<Card4/>}></Route>
+                <Route path="/card4" element={<Contact/>}></Route>
 
                 
             </Routes>

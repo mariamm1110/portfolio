@@ -33,17 +33,17 @@ export const CardContainer: React.FC = () => {
                 
 
                 <PortfolioCard 
-                title={'Card 1'} paragraph={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'} 
+                title={'Card 1'} paragraph={'Proyectos con framework React'} 
                 image={imgReact} 
-                projectName="ProjectName1" />
+                projectName="React" />
                 <PortfolioCard 
-                title={'Card 1'} paragraph={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'} 
+                title={'Card 1'} paragraph={'Proyectos con framework NestJS'} 
                 image={imgNest} 
-                projectName="ProjectName1" />
+                projectName="Nest" />
                 <PortfolioCard 
-                title={'Card 1'} paragraph={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'} 
+                title={'Card 1'} paragraph={'Proyectos con HTML/CSS puro'} 
                 image={imgCss} 
-                projectName="ProjectName1" />
+                projectName="HTML/CSS" />
                 
             </div>
         </div>

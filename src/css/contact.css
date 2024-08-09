@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+.body-contact {
+    font-family: 'Arial', sans-serif;
+    background-color: #7d639f;
+    color: #ffffff;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #6a4d88;
+}
+
+.form-container {
+    width: 50%;
+}
+
+.form-container h2 {
+    font-size: 24px;
+    margin-bottom: 50px;
+    font-family: "Yeseva One", sans-serif;
+    font-size: 40px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+input::placeholder, textarea::placeholder {
+    color:white;
+    font-family: "noto sans jp", sans-serif;
+    font-weight: 100;
+}
+.form-container input{
+    background-color: #7d639f;
+    border: none;
+    padding: 15px;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    color: #c71979;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+
+.form-container textarea {
+    background-color: #7d639f;
+    border: none;
+    padding: 15px;
+    height: 200px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    color: #8ac719;
+    font-size: 16px;
+    margin-bottom: 30px;
+
+}
+
+textarea{
+    height: 500px;
+}
+
+.form-container button {
+    display: inline-block;
+    width: 40%;
+    position: relative; /* Necesario para el posicionamiento del pseudo-elemento */
+    padding: 15px 40px;
+    letter-spacing: 2px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: #f26d7d 5px solid;
+    font-family: "Montserrat", sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    color: #91708a;
+    text-decoration: none;
+    overflow: hidden; /* Asegura que el pseudo-elemento no se desborde */
+    transition: all 200ms;
+}
+
+.form-container button:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 12px 1px #f26d7d;
+}
+
+.form-container button{
+    transform: translateY(10px);
+    box-shadow: 0 0 0;
+}
+
+.social-container {
+    width: 30%;
+    text-align: center;
+}
+
+.social-container h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: "Yeseva One", sans-serif;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+.social-icons a {
+    margin: 0 10px;
+    
+}
+
+.social-icons svg {
+    width: 60px;
+}
+
+.footer-contact {
+    background-color: #6a4d88;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo-contact img {
+    width: 120px;
+}
+
+
+.icon1{
+    width: 60px;
+    transform: rotate(-10deg);
+}

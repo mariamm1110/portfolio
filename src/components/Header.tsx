@@ -8,7 +8,7 @@ interface HeaderProps {
 
 
 
-export const Header: React.FC<HeaderProps> = ({logo, mainBody, toolbarBody}) => {
+export const Header: React.FC<HeaderProps> = ({logo, mainBody}) => {
   return (
     <>
     <header className="header-header">
@@ -24,9 +24,7 @@ export const Header: React.FC<HeaderProps> = ({logo, mainBody, toolbarBody}) => 
         </div>
 
     </header>
-    <div className="toolbar-header">
-        <div className="toolbar-body-header">{toolbarBody}</div>
-    </div>
+    
     
     </>
     

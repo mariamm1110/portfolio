@@ -9,17 +9,22 @@ export const Content = () => {
         <aside className="content">
             <div className="breadcrumb">
                 <div className="breadcrumb-selected">
-                    breadcrumb-selected
+                    Quick links
                 </div>
             </div>
             <div className="content-main">
                 
                 <Waterfall
-                    title='titulo1'
-                    paragraph='parrafo1'
+                    title1='Facebook'
+                    title2='LinkedIn'
+                    title3='Mail'
+                    title4='Github'
+                    paragraph='mariamm1110'
                 />
                 
-                
+               <div className="text-main">
+                <h3> Find here some of my social media and contact.</h3>
+                </div> 
             </div>
         </aside>
     </>

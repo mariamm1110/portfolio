@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
 li {
   display: table-cell;
   position: relative;
@@ -5,13 +6,14 @@ li {
 }
 
 .dios{
-  color: white;
+  color: #26282a;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;
   display: inline-block;
   padding: 15px 20px;
   position: relative;
+  font-family: "Calistoga", sans-serif;
 }
 
 .dios::after {
@@ -30,6 +32,12 @@ li {
   width: 100%;
   left: 0;
   background-color: lightblue;
+  
+}
+
+.dios:hover{
+  transform: translateY(-3px);
+  /* transform: scale(1.1); */
 }
 
 
@@ -81,7 +89,7 @@ li {
 } */
 
 .head {
-  background-color: #ffcccc;
+  background-color: #f5f7f2;
   padding: 20px;
   text-align: center;
 }
@@ -97,19 +105,26 @@ li {
 } */
 
 .menu {
-  background-color: #ffe6cc;
+  background-color: #fff4e5;
   padding: 10px;
-  margin-bottom: 20px;
+  
+  border-radius: 50px;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
 }
 
 .menu ul {
   list-style: none;
   display: flex;
   justify-content: center;
+  
 }
 
 .menu li {
   margin: 0 15px;
+  
 }
 
 main {

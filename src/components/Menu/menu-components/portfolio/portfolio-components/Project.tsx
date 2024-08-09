@@ -1,6 +1,6 @@
 import '../../../../../css/portfolio/projects/project.css'
 import styled from 'styled-components';
-import React, {useEffect, useRef} from 'react';
+import React from 'react';
 
 interface ProjectProps {
     title:string;
@@ -41,34 +41,9 @@ interface CustomStyle extends React.CSSProperties {
 
 export const Project:React.FC<ProjectProps> = ({title, paragraph,subtitle1,number1,background, color}) => {
 
-  const projectRef=useRef<HTMLDivElement>(null);
   const style: CustomStyle = { '--num': number1 };
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('animate');
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: 0.1,
-      }
-    );
-
-    if (projectRef.current) {
-      observer.observe(projectRef.current);
-    }
-
-    return () => {
-      if (projectRef.current) {
-        observer.unobserve(projectRef.current);
-      }
-    };
-  }, []);
+ 
 
   return (
     <>

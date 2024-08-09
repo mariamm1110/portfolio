@@ -1,15 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
+@-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
 
 .body-tech-skills{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    height: 700px;    
+    height: 100%;    
     color: #333;
     background-color: #f09aa8;
     font-family: 'Sora', sans-serif;
     background-image: url(../../assets/fondo.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title-tech-skills{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    
+    
+}
+
+.title-tech-skills h1{
+    font-size: 5em;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /* font-family: "Montserrat", sans-serif; */
+    /* font-family: "Kalnia Glaze", cursive; */
+    font-family: "Lexend", cursive;
+    font-weight: 600;
+   
+
+}
+.my-tech-skills{
+    color:#fff4e5;
+}
+
+.skills-tech-skilss{
+    color:#fca55d;
+    transform: translateX(5%);
 }
 
 .tech-skills-container{
@@ -18,14 +74,16 @@
     /* max-width: 1000px; */
     margin: 15px 0;
     padding: 20px;
-    background: #ff748c;
-    background-image: url(../../assets/fondo.png);
+    
+   
     
     
     position: relative;
     padding-top: 60px;
     display: flex;
     justify-content: space-around;
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .card-tech-skills{
@@ -37,7 +95,7 @@
     height: 500px;
     text-align: left;
     position: relative;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     
 }
 
@@ -63,7 +121,7 @@
     margin-right: 0;
     margin-bottom: 50px;
     margin-left: 0; */
-    justify-content: center;
+    justify-content: space-around;
     border-radius: 40px;
     background-color: #fca55d;
     margin: -40px 40px 50px 0;
@@ -79,7 +137,7 @@
     padding: 5px 10px;
     border-radius: 20px;
     font-weight: bold;
-    margin-right: 15px;
+    margin-left: 20px;
 }
 
 .title-tech-skills{

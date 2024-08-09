@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import React  from "react"
 import { PortfolioCard } from "./PortfolioCard";
 import '../../../../../css/portfolio/cardContainer.css';
 import imgReact from '../../../../../css/portfolio/images/reactmorado.png';
@@ -7,13 +7,9 @@ import imgCss from '../../../../../css/portfolio/images/css.png';
 
 export const CardContainer: React.FC = () => {
 
-    const targetRef = useRef<HTMLDivElement>(null);
+    
 
-    const handleLike = () => {
-        if (targetRef.current) {
-          targetRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      };
+   
     
   return (
     <>

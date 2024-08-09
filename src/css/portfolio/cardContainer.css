@@ -59,11 +59,11 @@
     background: linear-gradient(to left, #580c4a ,#e25a8e,#6a47c7);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text; /* Add the standard property */
     letter-spacing: 5px;
     font-weight: 400;
     font-size: 80px;
     text-decoration:  underline white;
-
 }
 
 .cards-container-card-container{

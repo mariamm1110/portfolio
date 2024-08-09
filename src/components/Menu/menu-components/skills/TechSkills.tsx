@@ -1,10 +1,14 @@
 import '../../../../css/skills/techskills.css';
 import imgLang from '../../../../assets/lenguajes.png';
 
+
 export const TechSkills = () => {
   return (
     <>
         <div className="body-tech-skills">
+            <div className="title-tech-skills">
+                <h1 className="my-tech-skills">My</h1><h1 className="skills-tech-skilss">Skills</h1>
+            </div>
             
             <div className="tech-skills-container">
 
@@ -14,9 +18,9 @@ export const TechSkills = () => {
                 <div className="card-tech-skills">
                    
                     <div className="header-tech-skills">
-                        <img src="" alt="" />
+                        
                         <div className="number-tech-skills">01</div>
-                        <div className="title-tech-skills">Technical Skills</div>
+                        <div className="title-tech-skills">Technical</div>
                     </div>
                     <div className="content-tech-skills">
                         <p>Java, JacaScript, TypeScript, SQL, mySQL, Git, Postgres, MongoDB, Docker
@@ -27,7 +31,7 @@ export const TechSkills = () => {
                 </div>
                 <div className="card-tech-skills">
                     <div className="header-tech-skills">
-                        <img src="" alt="" />
+                        
                         <div className="number-tech-skills">01</div>
                         <div className="title-tech-skills">Languages</div>
                     </div>

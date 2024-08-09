@@ -14,15 +14,16 @@
 }
 @keyframes glow {
     from {
-      box-shadow: 0 0 10px -10px #9f5ea5;
+      box-shadow: 0 0 10px -10px #7e3285;
     }
     to {
-      box-shadow: 0 0 10px 10px #9f5ea5;
+      box-shadow: 0 0 10px 10px #7e3285;
     }
   }
 
 .service-card-card:hover{
-    transform: scale(1.05);
+    transform: translateX(10px) translateY(-10px);
+
     transition: 0.5s;
     animation: glow 1s infinite alternate;
 

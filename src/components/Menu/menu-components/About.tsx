@@ -1,5 +1,11 @@
 import '../../../css/about.css';
 import yo from '../../../assets/yo.jpeg';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faGhost, faHeart, faHippo, fas } from '@fortawesome/free-solid-svg-icons';  // Para todos los iconos sólidos
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+
+library.add(fas);
 
 export const About = () => {
   return (
@@ -17,11 +23,14 @@ export const About = () => {
                     <img src={yo} alt="profile" />
                 </div>
                 <div className="profile-info-about">
-                    <h2>FULL NAME</h2>
+                    <div className="title-info-about">
+                    <h2>FULL NAME <FontAwesomeIcon icon={faHeart}  style={{ marginLeft: '10px' }}/></h2>
+                    </div>
+                    
                     <p>Maria Antonia Meneses</p>
-                    <h2>E-MAIL</h2>
+                    <h2>E-MAIL <FontAwesomeIcon icon={faHippo} style={{ marginLeft: '10px' }} /></h2>
                     <p>mariamema@hotmail.com</p>
-                    <h2>WEBFOLIO</h2>
+                    <h2>WEBFOLIO <FontAwesomeIcon icon={faGhost} style={{ marginLeft: '10px' }}/></h2>
                     <p><a href="link">link</a></p>
                 </div>
             </div>

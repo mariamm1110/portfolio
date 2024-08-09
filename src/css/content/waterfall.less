@@ -52,7 +52,7 @@ a:after{
     padding:0;
     
     > li{
-      background:darken(@WHITE,75%);
+      background:#fff4e5;
       border-left:5px solid var(--gradient-color);
       margin-bottom:1px;
       position:relative;
@@ -78,7 +78,7 @@ a:after{
         --gradient-color:@COLOR5g;
       }
       a{
-        color:@WHITE;
+        color:#9329d6;
         display:block;
         padding:@GAP;
         position:relative;
@@ -86,7 +86,7 @@ a:after{
         z-index:1;
         &:not(:last-child){
           &:before{
-            content:"\f078";
+            content: url(https://fontawesome.com/icons/arrow-right?f=classic&s=solid);
             font-family:fontAwesome;
             font-size:.75em;
             line-height:50px;
@@ -223,6 +223,8 @@ a:after{
 }
 
 
+
+
 @media (min-width:775px){
   .menu-waterfall > ol{
     > li{
@@ -236,3 +238,9 @@ a:after{
     }
   }
 }
+
+.arrow-right:hover{
+    a:before{
+      transform:rotate(-180deg);
+    }
+  }

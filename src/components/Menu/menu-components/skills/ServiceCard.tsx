@@ -1,4 +1,4 @@
-import styled from "styled-components";
+
 import '../../../../css/skills/serviceCard.css';
 
 interface ServiceCardProps {

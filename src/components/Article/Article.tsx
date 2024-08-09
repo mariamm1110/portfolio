@@ -1,4 +1,8 @@
 import { Card } from "./Card/Card"
+import imgEia from '../../assets/eia.png'
+import imgNest from '../../assets/nest.png'
+import imgReact from '../../assets/react1.png'
+import imgProg from '../../assets/programming.png'
 
 
 import '../../../src/css/article/article.css';
@@ -10,27 +14,27 @@ export const Article: React.FC = () => {
     <div className="article-article-a">
 
     <div className="article-container-article-a">
-      <h1 className="article-title-article-a ">Article</h1>
+      <h1 className="article-title-article-a ">Education and courses</h1>
       <div className="container-article-a ">
         <Card 
-          title="CSS" 
-          image="https://via.placeholder.com/150" 
-          paragraph="I love CSS" 
+          title="EIA University" 
+          image={imgEia}
+          paragraph="3rd year software engineering student" 
         />
         <Card 
-          title="Nest" 
-          image="https://upload.wikimedia.org/wikipedia/commons/a/a8/NestJS.svg" 
-          paragraph="I love Nest" 
+          title="NestJS course" 
+          image={imgNest}
+          paragraph="dev/talles profesional course" 
         />
         <Card 
-          title="Nest" 
-          image="https://upload.wikimedia.org/wikipedia/commons/a/a8/NestJS.svg" 
-          paragraph="I love Nest" 
+          title="React course"  
+          image={imgReact}
+          paragraph="dev/talles profesional course" 
         />
         <Card 
-          title="Nest" 
-          image="https://upload.wikimedia.org/wikipedia/commons/a/a8/NestJS.svg" 
-          paragraph="I love Nest" 
+          title="Competitive Programming" 
+          image={imgProg}
+          paragraph="extracurricular university Club" 
         />
         {/* Agrega más tarjetas aquí según sea necesario */}
       </div>

@@ -1,9 +1,9 @@
 
 import './App.css'
-import { Article } from './components/Article/Article'
+
 import { RouterR } from './components/Menu/RouterR'
 import { Header } from './components/Header';
-import { Content } from './components/content/Content';
+
 
 function App() {
   
